@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main screen layout -->
+<!-- App title and two main buttons -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E8F5E9">
+
+    <!-- App title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lost &amp; Found App by Hongming"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#81C784"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Empty space for centering -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Button container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Create advert button -->
+        <Button
+            android:id="@+id/btnCreateNewAdvert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CREATE A NEW ADVERT"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:backgroundTint="#66BB6A"/>
+
+        <!-- Show items button -->
+        <Button
+            android:id="@+id/btnShowAllItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHOW ALL LOST &amp; FOUND ITEMS"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:backgroundTint="#66BB6A"/>
+
+        <!-- Show on map button -->
+        <Button
+            android:id="@+id/btnShowOnMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHOW ON MAP"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:backgroundTint="#66BB6A"/>
+
+    </LinearLayout>
+
+    <!-- Bottom empty space -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
